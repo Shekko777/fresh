@@ -4,7 +4,24 @@ body {
   font-size: 14px;
   line-height: 1.4;
   color: #505050;
+  letter-spacing: 0.03em;
   background-color: #fff;
+}
+
+body.lock {
+  overflow: hidden;
+  padding-right: 17px;
+  &::before {
+    content: "";
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+  }
 }
 
 .container {
@@ -12,4 +29,21 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-family: Ruda;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: 1px solid #63a60e;
+  border-radius: 6px;
 }

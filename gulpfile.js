@@ -1,4 +1,5 @@
 const { src, dest, watch, parallel, series }   = require('gulp');
+const { data } = require("jquery");
 const scss                   = require('gulp-sass')(require('sass'));
 const concat                 = require('gulp-concat');
 const autoprefixer           = require('gulp-autoprefixer');
