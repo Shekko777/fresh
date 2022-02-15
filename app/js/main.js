@@ -31,32 +31,6 @@ $(function(){
 
 });
 
-window.addEventListener('click', function ( event ) {
-
-  let counter;
-
-  if(data.target.dataset.action === 'btnPlus' || data.target.dataset.action === 'btnMinus'){
-    const cartButton =  event.target.closest('.cart__button');
-    counter = cartButton.querySelector('[data-counter]');
-
-    if (event.target.dataset.action === 'btnPlus') {  
-      counter.innerText = ++counter.innerText;
-  }
-
-  if (event.target.dataset.action === 'btnMinus') {
-    if(parseInt(counter.innerText) > 1) {
-      counter.innerText = --counter.innerText;
-    }
-    
-  }
-  }   
-  
-  
-
-  
-
-
-});
 
 
 
